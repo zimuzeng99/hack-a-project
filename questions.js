@@ -13,7 +13,7 @@ xhr.addEventListener("load", function(e) {
 });
 
 // Send the request to the Flask API in order to retrieve search results
-var url = "http://localhost:5000/api/questions";
+var url = window.location.protocol + "//" + window.location.host + "/" + "api/questions";
 xhr.open("GET", url);
 xhr.send();
 
