@@ -91,6 +91,6 @@ function createQuestionCard(question) {
   </div>`;
 
   var parent = document.createElement("div");
-  parent.innerHTML = htmlString
-  return parent.firstChild
+  parent.innerHTML = htmlString;
+  return parent.firstChild;
 }
