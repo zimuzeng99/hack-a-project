@@ -37,12 +37,12 @@
             <ul class="nav navbar-nav mr-auto float-left">
               <li class="nav-item mobile-menu d-md-none mr-auto"><a class="nav-link nav-menu-main menu-toggle hidden-xs" href="#"><i class="ft-menu font-large-1">         </i></a></li>
               <li class="nav-item d-none d-md-block"><a class="nav-link nav-link-expand" href="#"><i class="ficon ft-maximize"></i></a></li>
-              <li class="dropdown nav-item mega-dropdown d-none d-md-block"><a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Mega</a>
+              <li class="dropdown nav-item mega-dropdown d-none d-md-block">
                 <ul class="mega-dropdown-menu dropdown-menu row">
                   <li class="col-md-2">
                     <h6 class="dropdown-menu-header text-uppercase mb-1"><i class="ft-link"></i> Quick Links</h6>
                     <ul>
-                      <li><a class="my-1" href="index.html"><i class="ft-home mr-1"></i> Dashboard</a></li>
+                      <li><a class="my-1" href="user-dashboard.html"><i class="ft-home mr-1"></i> Dashboard</a></li>
                       <li><a class="my-1" href="email-application.html"><i class="ft-layers mr-1"></i> Email Application</a></li>
                       <li><a class="my-1" href="chat-application.html"><i class="ft-message-square mr-1"></i> Chat Application</a></li>
                       <li><a class="my-1" href="form-wizard.html"><i class="ft-edit mr-1"></i> Form Wizard</a></li>
@@ -159,7 +159,7 @@
                   <div class="arrow_box"><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-us"></i> English</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-cn"></i> Chinese</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-ru"></i> Russian</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-fr"></i> French</a><a class="dropdown-item" href="#"><i class="flag-icon flag-icon-es"></i> Spanish</a></div>
                 </div>
               </li>
-              <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell bell-shake" id="notification-navbar-link"></i><span class="badge badge-pill badge-sm badge-info badge-default badge-up badge-glow">5</span></a>
+              <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-bell bell-shake" id="notification-navbar-link"></i><span class="badge badge-pill badge-sm badge-info badge-default badge-up badge-glow">2</span></a>
                 <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
                   <div class="arrow_box_right">
                     <li class="dropdown-menu-header">
@@ -169,25 +169,9 @@
                         <div class="media">
                           <div class="media-left align-self-center"><i class="ft-plus-square icon-bg-circle bg-cyan"></i></div>
                           <div class="media-body">
-                            <h6 class="media-heading">You have new order!</h6>
-                            <p class="notification-text font-small-3 text-muted">Lorem ipsum dolor sit amet, consectetuer elit.</p><small>
+                            <h6 class="media-heading">Someone asked a new question!</h6>
+                            <p class="notification-text font-small-3 text-muted">A user in Computer Science Group asked a question</p><small>
                               <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">30 minutes ago</time></small>
-                          </div>
-                        </div></a><a href="javascript:void(0)">
-                        <div class="media">
-                          <div class="media-left align-self-center"><i class="ft-download-cloud icon-bg-circle bg-red bg-darken-1"></i></div>
-                          <div class="media-body">
-                            <h6 class="media-heading red darken-1">99% Server load</h6>
-                            <p class="notification-text font-small-3 text-muted">Aliquam tincidunt mauris eu risus.</p><small>
-                              <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Five hour ago</time></small>
-                          </div>
-                        </div></a><a href="javascript:void(0)">
-                        <div class="media">
-                          <div class="media-left align-self-center"><i class="ft-alert-triangle icon-bg-circle bg-yellow bg-darken-3"></i></div>
-                          <div class="media-body">
-                            <h6 class="media-heading yellow darken-3">Warning notifixation</h6>
-                            <p class="notification-text font-small-3 text-muted">Vestibulum auctor dapibus neque.</p><small>
-                              <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Today</time></small>
                           </div>
                         </div></a><a href="javascript:void(0)">
                         <div class="media">
@@ -196,17 +180,10 @@
                             <h6 class="media-heading">Complete the task</h6><small>
                               <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last week</time></small>
                           </div>
-                        </div></a><a href="javascript:void(0)">
-                        <div class="media">
-                          <div class="media-left align-self-center"><i class="ft-file icon-bg-circle bg-teal"></i></div>
-                          <div class="media-body">
-                            <h6 class="media-heading">Generate monthly report</h6><small>
-                              <time class="media-meta text-muted" datetime="2015-06-11T18:29:20+08:00">Last month</time></small>
-                          </div>
                         </div></a></li>
                     <li class="dropdown-menu-footer"><a class="dropdown-item text-muted text-center" href="javascript:void(0)">Read all notifications</a></li>
                   </div>
-                </ul>
+                </ul> 
               </li>
               <li class="dropdown dropdown-notification nav-item"><a class="nav-link nav-link-label" href="#" data-toggle="dropdown"><i class="ficon ft-mail">             </i></a>
                 <ul class="dropdown-menu dropdown-menu-media dropdown-menu-right">
@@ -272,14 +249,14 @@
       <div class="navbar-header">
         <ul class="nav navbar-nav flex-row position-relative">
           <li class="nav-item mr-auto"><a class="navbar-brand" href="index.html"><img class="brand-logo" alt="Chameleon admin logo" src="app-assets/images/logo/logo.png"/>
-              <h3 class="brand-text">Chameleon</h3></a></li>
+              <h3 class="brand-text">Facebook</h3></a></li>
           <li class="nav-item d-none d-md-block nav-toggle"><a class="nav-link modern-nav-toggle pr-0" data-toggle="collapse"><i class="toggle-icon ft-disc font-medium-3" data-ticon="ft-disc"></i></a></li>
           <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
         </ul>
       </div>
       <div class="main-menu-content">
         <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
-          <li class=" nav-item"><a href="index.html"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span><span class="badge badge badge-info badge-pill float-right mr-2">3</span></a>
+          <li class=" nav-item"><a href="user-dashboard.html"><i class="ft-home"></i><span class="menu-title" data-i18n="">Dashboard</span><span class="badge badge badge-info badge-pill float-right mr-2">3</span></a>
           </li>
           <li class=" nav-item"><a href="#"><i class="ft-layers"></i><span class="menu-title" data-i18n="">Apps</span></a>
             <ul class="menu-content">
@@ -315,7 +292,7 @@
               </div>
             </div>
           </div>
-          <div class="content-header-right col-md-4 col-12"> <a class="btn btn-warning btn-min-width float-md-right box-shadow-4 mr-1 mb-1" href="chat-application.html"><i class="ft-mail"></i> Email</a></div>
+          <div class="content-header-right col-md-4 col-12"> <a class="btn btn-warning btn-min-width float-md-right box-shadow-4 mr-1 mb-1" href="chat-application.html"><i class="ft-mail"></i> New Question</a></div>
         </div>
         <div class="content-body"><section>
     <div class="row" id="questionCardContainer">
