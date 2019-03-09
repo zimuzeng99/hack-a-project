@@ -28,6 +28,15 @@ def usersAPI():
         if user["id"] == userID:
             return jsonify(user)
 
+@app.route("/api/questions", methods=["GET"])
+def questionsAPI():
+    groupID = int(request.args.get("groupID"))
+    jsonFile = open("groups.json")
+    data = json.load(jsonFile)
+    for group in data:
+        if group["id"] == groupID:
+            return jsonify(group["questions"])
+
 # Any URL not handled by the above '@app.route's is handled here. Most importantly
 # this allows additional resources like images and CSS files to be provided to the browser upon request
 @app.route("/<path:path>")
