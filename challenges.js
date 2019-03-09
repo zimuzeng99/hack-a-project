@@ -46,11 +46,20 @@ function createChallengeCard(challenge) {
                   <p>${challenge.description}</p>
                   <div class="row mb-1">
                       <div class="col-6 col-sm-3 col-md-6 col-lg-3 border-right-blue-grey border-right-lighten-5 text-center">
-                          <p class="blue-grey lighten-2 mb-0">Number of people completed</p>
-                          <p class="font-medium-5 text-bold-400">${challenge.peopleCompleted.length}</p>
+                          <p class="blue-grey lighten-2 mb-0">Priority</p>
+                          <p class="font-medium-5 text-bold-400">${challenge.priority}</p>
                       </div>
+                      <div class="col-6 col-sm-3 col-md-6 col-lg-3 border-right-blue-grey border-right-lighten-5 text-center">
+                          <p class="blue-grey lighten-2 mb-0">Difficulty</p>
+                          <p class="font-medium-5 text-bold-400">${challenge.difficulty} / 10</p>
+                      </div>
+                      <div class="col-6 col-sm-3 col-md-6 col-lg-3 border-right-blue-grey border-right-lighten-5 text-center">
+                          <p class="blue-grey lighten-2 mb-0">Completed</p>
+                          <p class="font-medium-5 text-bold-400">${challenge.peopleCompleted.length / 5 *100}%</p>
+                      </div>
+                      
                   </div>
-                  <h6 class="text-bold-600"> Task Completed:
+                  <h6 class="text-bold-600"> People Completed:
                             <span>${challenge.peopleCompleted.length} / 5</span>
                         </h6>
                         <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
@@ -58,8 +67,8 @@ function createChallengeCard(challenge) {
                         </div>
                   <div class="media d-flex">
                       <div class="align-self-center">
-                          <h6 class="text-bold-600 mt-2"> Asked by:
-                              <span class="info">${challenge.raisedBy}</span>
+                          <h6 class="text-bold-600 mt-2"> Deadline:
+                              <span class="info">${challenge.deadline}</span>
                           </h6>
                       </div>
                       <div class="media-body text-right mt-2 d-md-block">
