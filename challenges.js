@@ -1,6 +1,7 @@
 var xhr = new XMLHttpRequest();
 
 var currentUser = "Anthony Sirosias";
+var currentID = 1;
 var groupID = 1;
 
 challengeCardContainer = document.getElementById("challengeCardContainer");
@@ -22,6 +23,11 @@ xhr.open("GET", url + "?" + params);
 xhr.send();
 
 function createChallengeCard(challenge) {
+    if(challenge.peopleCompleted.includes(currentID))
+    but= ' <a class="btn btn-md btn-success box-shadow-2 round btn-min-width pull-right" href="#" target="_blank">Completed</a>'
+    else
+    but= ' <a class="btn btn-md btn-danger box-shadow-2 round btn-min-width pull-right" href="#" target="_blank">In Progress</a><a class="btn btn-md btn-info box-shadow-2 round btn-min-width pull-right" href="#" target="_blank">Update</a>'
+
   var htmlString = `<div class="col-12 col-lg-6">
       <div class="card">
           <div class="card-header">
@@ -30,7 +36,7 @@ function createChallengeCard(challenge) {
                   <div class="heading-elements">
                       <ul class="list-inline mb-0 display-block">
                           <li>
-                              <a class="btn btn-md btn-danger box-shadow-2 round btn-min-width pull-right" href="#" target="_blank">In Progress</a>
+                          ${ but }
                           </li>
                       </ul>
                   </div>
