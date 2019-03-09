@@ -57,7 +57,7 @@ def addChallenge(groupID, userID):
     newEntry["difficulty"] = 10
     newEntry["priority"] = "!!!"
     newEntry["deadline"] = "11/03/2019"
-    newEntry["peopleCompleted"] = [1,2,3,4]
+    newEntry["peopleCompleted"] = []
     jsonFile = open("groups.json")
     data = json.load(jsonFile)
     for group in data:
