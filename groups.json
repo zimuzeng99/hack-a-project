@@ -7,11 +7,11 @@
     "members": [1, 2],
     "questions": [
       {
-          "question": "How long does Pintos take?",
+          "question": "How long does compilers take?",
           "askedBy": "Jesus Christ",
           "group": "Pintos",
           "isAnswered": false,
-          "description": "How long will it take to finish Pintos?",
+          "description": "How long will it take to finish compilers?",
           "answers": [
             {
               "id": 1,

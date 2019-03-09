@@ -41,7 +41,7 @@ xhr2.send();
 function createGroupEntry(group) {
   var htmlString = `<tr>
                                     <td class="text-truncate align-middle">
-                                        <a href="#">${group.groupName}</a>
+                                        <a href="questions.html?groupID=${group.id}&currentUser=${currentUserID}">${group.groupName}</a>
                                     </td>
                                     <td class="text-truncate">
                                         <ul class="list-unstyled users-list m-0">
