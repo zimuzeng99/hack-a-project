@@ -1,25 +1,25 @@
 var xhr = new XMLHttpRequest();
 
 var currentUser = "Anthony Sirosias";
-
-questionCardContainer = document.getElementById("questionCardContainer");
+groupsContainer = document.getElementById("groupsContainer");
 
 // Adds one new flashcard to the page for each search result
 xhr.addEventListener("load", function(e) {
   var response = JSON.parse(xhr.responseText);
   for (var i = 0; i < response.length; i++) {
-    var newCard = createQuestionCard(response[i]);
-    questionCardContainer.appendChild(newCard);
-    console.log(newCard);
+    var newEntry = createGroupEntry(response[i]);
+    groupsContainer.appendChild(newEntry);
+    console.log(newEntry);
   }
 });
 
 // Send the request to the Flask API in order to retrieve search results
-var url = window.location.protocol + "//" + window.location.host + "/" + "api/questions";
-xhr.open("GET", url);
+var url = window.location.protocol + "//" + window.location.host + "/" + "api/groups";
+var params = "user=" + currentUser;
+xhr.open("GET", url + "?" + params);
 xhr.send();
 
-function createQuestionCard(question) {
+function createGroupEntry(question) {
   var htmlString = `<div class="col-12 col-lg-6">
       <div class="card">
           <div class="card-header">

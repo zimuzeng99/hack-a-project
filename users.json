@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "userName": "Anthony Sirosias",
+    "groups": [1, 2],
+    "currentFBucks": 1980,
+    "challengesCompleted": 14,
+    "totalFBucks": 10989,
+    "challengesPending": 42,
+    "questionsAnswered": 489
+  }
+]
