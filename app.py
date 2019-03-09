@@ -46,6 +46,28 @@ def challengesAPI():
         if group["id"] == groupID:
             return jsonify(group["challenges"])
 
+@app.route("/api/addChallenge/<int:groupID>/<int:userID>", methods=["POST"])
+def addChallenge(groupID, userID):
+    newEntry = {}
+    newEntry["title"] = "Complete Pintos Task 3"
+    newEntry["description"] = "Get pintos done"
+    print(newEntry["title"])
+    print(newEntry["description"])
+    newEntry["raisedBy"] = "Anthony Sirosias"
+    newEntry["difficulty"] = 10
+    newEntry["priority"] = "!!!"
+    newEntry["deadline"] = "11/03/2019"
+    newEntry["peopleCompleted"] = [1,2,3,4]
+    jsonFile = open("groups.json")
+    data = json.load(jsonFile)
+    for group in data:
+        if group["id"] == groupID:
+            group["challenges"].append(newEntry)
+    jsonStr = json.dumps(data)
+    jsonFile = open("groups.json", "w")
+    jsonFile.write(jsonStr)
+    return redirect("/challenges.html?groupID=" + str(groupID) + "&currentUser=" + str(userID))
+
 
 @app.route("/api/addQuestion/<int:groupID>/<int:userID>", methods=["POST"])
 def addQuestion(groupID, userID):

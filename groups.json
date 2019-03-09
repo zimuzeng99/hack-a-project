@@ -1,1 +1,153 @@
-[{"id": 1, "groupName": "Pintos", "connectedGroups": [1], "description": "A study group for doing Pintos", "members": [1, 2], "questions": [{"question": "How long does compilers take?", "askedBy": "Jesus Christ", "group": "Pintos", "isAnswered": false, "description": "How long will it take to finish compilers?", "answers": [{"id": 1, "user": "Jesus Christ", "text": "About 11 weeks", "rating": 10}, {"id": 2, "user": "Lord", "text": "About 123 weeks", "rating": 7}]}, {"question": "How long does WACC take?", "askedBy": "Anthony Sirosias", "group": "Pintos", "isAnswered": false, "description": "How long will it take to finish WACC?", "answers": [{"id": 1, "user": "Jesus Christ", "text": "About 11 weeks", "rating": 10}, {"id": 2, "user": "Lord", "text": "About 123 weeks", "rating": 7}]}, {"question": "Jeus", "description": "adsfasdf", "askedBy": "Anthony Sirosias", "isAnswered": false, "answers": []}], "challenges": [{"title": "Complete Pintos Task 1", "description": "Complete Pintos Task 1", "peopleCompleted": [1, 2, 3, 4], "deadline": "09/03/2019", "raisedBy": "Jesus Christ", "priority": "!!!", "difficulty": 6}, {"title": "Complete Pintos Task 2", "description": "Complete Pintos Task 2", "peopleCompleted": [2], "deadline": "11/03/2019", "raisedBy": "Anthony Sirosias", "priority": "!!", "difficulty": 2}]}, {"id": 2, "groupName": "Haskell", "connectedGroups": [1], "description": "A study group for doing Pintos", "members": [1, 2], "questions": [{"question": "How long does Pintos take?", "askedBy": "Jesus Christ", "group": "Pintos", "isAnswered": false, "description": "How long will it take to finish Pintos?", "answers": [{"id": 1, "user": "Jesus Christ", "text": "About 11 weeks", "rating": 10}, {"id": 2, "user": "Lord", "text": "About 123 weeks", "rating": 7}]}, {"question": "How long does WACC take?", "askedBy": "Jesus Christ", "group": "Pintos", "isAnswered": false, "description": "How long will it take to finish WACC?", "answers": [{"id": 1, "user": "Jesus Christ", "text": "About 11 weeks", "rating": 10}, {"id": 2, "user": "Lord", "text": "About 123 weeks", "rating": 7}]}]}]
+[
+  {
+    "id": 1,
+    "groupName": "Pintos",
+    "connectedGroups": [
+      1
+    ],
+    "description": "A study group for doing Pintos",
+    "members": [
+      1,
+      2
+    ],
+    "questions": [
+      {
+        "question": "How long does compilers take?",
+        "askedBy": "Lars Stoker",
+        "group": "Pintos",
+        "isAnswered": false,
+        "description": "How long will it take to finish compilers?",
+        "answers": [
+          {
+            "id": 1,
+            "user": "Lars Stoker",
+            "text": "About 11 weeks",
+            "rating": 10
+          },
+          {
+            "id": 2,
+            "user": "Lord",
+            "text": "About 123 weeks",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "question": "How long does WACC take?",
+        "askedBy": "Anthony Sirosias",
+        "group": "Pintos",
+        "isAnswered": false,
+        "description": "How long will it take to finish WACC?",
+        "answers": [
+          {
+            "id": 1,
+            "user": "Lars Stoker",
+            "text": "About 11 weeks",
+            "rating": 10
+          },
+          {
+            "id": 2,
+            "user": "Lord",
+            "text": "About 123 weeks",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "question": "Jeus",
+        "description": "adsfasdf",
+        "askedBy": "Anthony Sirosias",
+        "isAnswered": false,
+        "answers": [
+
+        ]
+      }
+    ],
+    "challenges": [
+      {
+        "title": "Complete Pintos Task 10",
+        "description": "Complete Pintos Task 1",
+        "peopleCompleted": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "deadline": "09/03/2019",
+        "raisedBy": "Lars Stoker",
+        "priority": "!!!",
+        "difficulty": 6
+      },
+      {
+        "title": "Complete Pintos Task 10",
+        "description": "Complete Pintos Task 1",
+        "peopleCompleted": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "deadline": "09/03/2019",
+        "raisedBy": "Lars Stoker",
+        "priority": "!!!",
+        "difficulty": 6
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "groupName": "Haskell",
+    "connectedGroups": [
+      1
+    ],
+    "description": "A study group for doing Pintos",
+    "members": [
+      1,
+      2
+    ],
+    "questions": [
+      {
+        "question": "How long does Pintos take?",
+        "askedBy": "Lars Stoker",
+        "group": "Pintos",
+        "isAnswered": false,
+        "description": "How long will it take to finish Pintos?",
+        "answers": [
+          {
+            "id": 1,
+            "user": "Lars Stoker",
+            "text": "About 11 weeks",
+            "rating": 10
+          },
+          {
+            "id": 2,
+            "user": "Lord",
+            "text": "About 123 weeks",
+            "rating": 7
+          }
+        ]
+      },
+      {
+        "question": "How long does WACC take?",
+        "askedBy": "Lars Stoker",
+        "group": "Pintos",
+        "isAnswered": false,
+        "description": "How long will it take to finish WACC?",
+        "answers": [
+          {
+            "id": 1,
+            "user": "Lars Stoker",
+            "text": "About 11 weeks",
+            "rating": 10
+          },
+          {
+            "id": 2,
+            "user": "Lord",
+            "text": "About 123 weeks",
+            "rating": 7
+          }
+        ]
+      }
+    ]
+  }
+]
