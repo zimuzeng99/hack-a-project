@@ -270,7 +270,7 @@
               </li>
             </ul>
           </li>
-  
+
         </ul>
       </div>
       <div class="navigation-background"></div>
@@ -320,7 +320,7 @@
                 </div>
                 <div class="card-content collapse show">
                     <div class="card-body">
-                        <form action="#" class="steps-validation">
+                        <form action="http://localhost:5000/api/addChallenge/1/1" method="POST" class="steps-validation">
 
                             <!-- Step 1 -->
                             <fieldset>
@@ -331,7 +331,7 @@
                                                 Challenge :
                                                 <span class="danger">*</span>
                                             </label>
-                                            <input type="text" class="form-control required" id="firstName3" name="firstName" >
+                                            <input type="text" class="form-control required" id="firstName3" name="title" value="lars" >
                                         </div>
                                     </div>
 
@@ -341,7 +341,7 @@
                                                 Description :
                                                 <span class="danger">*</span>
                                             </label>
-                                            <textarea rows="10" class="form-control required" id="lastName3" name="lastName" ></textarea>
+                                            <textarea rows="10" class="form-control required" id="lastName3" name="description" ></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-6" style="width: 10%; max-width: 10%; flex: 0 0 100%">
@@ -388,10 +388,7 @@
                                     </div>
                                 </div>
 
-                                <button id="submitButton" class="btn btn-danger float-right" type="button"><i class="ft-arrow-right"></i> Submit</button>
-                                <script async defer>
-                                  
-                                </script>
+                                <input type="submit" id="submitButton" value="Submit" class="btn btn-danger float-right">
 
                             </fieldset>
                         </form>
