@@ -1,6 +1,7 @@
 var xhr = new XMLHttpRequest();
 
 var currentUser = "Anthony Sirosias";
+var groupID = 1;
 
 challengeCardContainer = document.getElementById("challengeCardContainer");
 
@@ -15,15 +16,16 @@ xhr.addEventListener("load", function(e) {
 });
 
 // Send the request to the Flask API in order to retrieve search results
-var url = window.location.protocol + "//" + window.location.host + "/" + "api/questions";
-xhr.open("GET", url);
+var url = window.location.protocol + "//" + window.location.host + "/" + "api/challenges";
+var params = "groupID=" + groupID;
+xhr.open("GET", url + "?" + params);
 xhr.send();
 
 function createChallengeCard(challenge) {
   var htmlString = `<div class="col-12 col-lg-6">
       <div class="card">
           <div class="card-header">
-              <h4 class="card-title">${challenge.challenge}</h4>
+              <h4 class="card-title">${challenge.title}</h4>
               <span class="text-medium-1 danger line-height-2 text-uppercase">${challenge.raisedBy}</span>
                   <div class="heading-elements">
                       <ul class="list-inline mb-0 display-block">
@@ -43,10 +45,10 @@ function createChallengeCard(challenge) {
                       </div>
                   </div>
                   <h6 class="text-bold-600"> Task Completed:
-                            <span>${challenge.peopleCompleted.length}/${members.length}</span>
+                            <span>${challenge.peopleCompleted.length} / 5</span>
                         </h6>
                         <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-                            <div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: ${challenge.peopleCompleted.length/members.length}" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="progress-bar bg-gradient-x-info" role="progressbar" style="width: ${challenge.peopleCompleted.length / 5 * 100}%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                   <div class="media d-flex">
                       <div class="align-self-center">
