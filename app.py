@@ -70,7 +70,7 @@ def addQuestion(groupID, userID):
 # this allows additional resources like images and CSS files to be provided to the browser upon request
 @app.route("/<path:path>")
 def catchAll(path):
-    return send_file(path[ : path.find("?")])
+    return send_file(path)
 
 if __name__ == "__main__":
     app.run()
