@@ -50,8 +50,8 @@ def challengesAPI():
 @app.route("/api/addQuestion/<int:groupID>/<int:userID>", methods=["POST"])
 def addQuestion(groupID, userID):
     newEntry = {}
-    newEntry["question"] = request.form["question"]
-    newEntry["description"] = request.form["description"]
+    newEntry["question"] = request.form.get("question")
+    newEntry["description"] = request.form.get("description")
     newEntry["askedBy"] = "Anthony Sirosias"
     newEntry["isAnswered"] = False
     newEntry["answers"] = []
@@ -59,8 +59,12 @@ def addQuestion(groupID, userID):
     data = json.load(jsonFile)
     for group in data:
         if group["id"] == groupID:
-            group["id"]["questions"].append(newEntry)
-    json.dump(data, jsonFile)
+            group["questions"].append(newEntry)
+    jsonStr = json.dumps(data)
+    jsonFile = open("groups.json", "w")
+    jsonFile.write(jsonStr)
+    print("/questions.html?groupID=" + str(groupID) + "&currentUser=" + str(userID))
+    return redirect("/questions.html?groupID=" + str(groupID) + "&currentUser=" + str(userID))
 
 # Any URL not handled by the above '@app.route's is handled here. Most importantly
 # this allows additional resources like images and CSS files to be provided to the browser upon request

@@ -89,3 +89,5 @@ function createQuestionCard(question) {
   parent.innerHTML = htmlString;
   return parent.firstChild;
 }
+
+document.getElementById("newQuestionButton").href = "newQuestion.html?groupID=" + groupID + "&userID=" + currentUser;
