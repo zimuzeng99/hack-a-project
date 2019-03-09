@@ -1,6 +1,7 @@
 var xhr = new XMLHttpRequest();
 
 var currentUser = "Anthony Sirosias";
+var groupID = 1;
 
 questionCardContainer = document.getElementById("questionCardContainer");
 
@@ -16,7 +17,8 @@ xhr.addEventListener("load", function(e) {
 
 // Send the request to the Flask API in order to retrieve search results
 var url = window.location.protocol + "//" + window.location.host + "/" + "api/questions";
-xhr.open("GET", url);
+var params = "groupID=" + groupID;
+xhr.open("GET", url + "?" + params);
 xhr.send();
 
 function createQuestionCard(question) {
