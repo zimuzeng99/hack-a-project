@@ -48,6 +48,22 @@
             }
           ]
       }
+    ],
+    "challenges": [
+      {
+        "title": "Complete Pintos Task 1",
+        "description": "Complete Pintos Task 1",
+        "peopleCompleted": [1, 2, 3, 4],
+        "deadline": "09/03/2019",
+        "raisedBy": "Jesus Christ"
+      },
+      {
+        "title": "Complete Pintos Task 2",
+        "description": "Complete Pintos Task 2",
+        "peopleCompleted": [1, 2],
+        "deadline": "11/03/2019",
+        "raisedBy": "Anthony Sirosias"
+      }
     ]
   },
   {

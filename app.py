@@ -37,6 +37,21 @@ def questionsAPI():
         if group["id"] == groupID:
             return jsonify(group["questions"])
 
+@app.route("/api/challenges", methods=["GET"])
+def challengesAPI():
+    groupID = int(request.args.get("groupID"))
+    jsonFile = open("groups.json")
+    data = json.load(jsonFile)
+    for group in data:
+        if group["id"] == groupID:
+            return jsonify(group["challenges"])
+
+@app.route("/api/addQuestion/<int:groupID>/<int:userID>", methods=["POST"])
+def addChallenge(groupID, userID):
+    newEntry = []
+    newEntry["question"] = request.form["question"]
+    newEntry["askedBy"]
+
 # Any URL not handled by the above '@app.route's is handled here. Most importantly
 # this allows additional resources like images and CSS files to be provided to the browser upon request
 @app.route("/<path:path>")
