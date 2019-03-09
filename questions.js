@@ -36,44 +36,20 @@ function createQuestionCard(question) {
           <div class="card-content collapse show">
               <div class="card-body pt-0 pb-1">
                   <p>${question.description}</p>
-
                   <div class="row mb-1">
                       <div class="col-6 col-sm-3 col-md-6 col-lg-3 border-right-blue-grey border-right-lighten-5 text-center">
-                          <p class="blue-grey lighten-2 mb-0">Tasks</p>
-                          <p class="font-medium-5 text-bold-400">26</p>
+                          <p class="blue-grey lighten-2 mb-0">Answers</p>
+                          <p class="font-medium-5 text-bold-400">${question.answers.length}</p>
                       </div>
-                      <div class="col-6 col-sm-3 col-md-6 col-lg-3 border-right-blue-grey border-right-lighten-5 text-center">
-                          <p class="blue-grey lighten-2 mb-0">Completed</p>
-                          <p class="font-medium-5 text-bold-400">58%</p>
-                      </div>
-                      <div class="col-6 col-sm-3 col-md-6 col-lg-3 border-right-blue-grey border-right-lighten-5 text-center">
-                          <p class="blue-grey lighten-2 mb-0">Pending</p>
-                          <p class="font-medium-5 text-bold-400">42%</p>
-                      </div>
-                      <div class="col-6 col-sm-3 col-md-6 col-lg-3 text-center">
-                          <p class="blue-grey lighten-2 mb-0">Version</p>
-                          <p class="font-medium-5 text-bold-400">4.5</p>
-                      </div>
-                  </div>
-
-                  <h6 class="text-bold-600"> Task Completed:
-                      <span>4/10</span>
-                  </h6>
-                  <div class="progress progress-sm mt-1 mb-0 box-shadow-2">
-                      <div class="progress-bar bg-gradient-x-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
-                          aria-valuemax="100"></div>
                   </div>
                   <div class="media d-flex">
                       <div class="align-self-center">
-                          <h6 class="text-bold-600 mt-2"> Client:
-                              <span class="info">Xeon Inc.</span>
-                          </h6>
-                          <h6 class="text-bold-600 mt-1"> Deadline:
-                              <span class="blue-grey">5th June, 2018</span>
+                          <h6 class="text-bold-600 mt-2"> Asked by:
+                              <span class="info">${question.askedBy}</span>
                           </h6>
                       </div>
                       <div class="media-body text-right mt-2 d-md-block">
-                          <span class="text-bold-600 mt-1"> Chameleon Team </span>
+                          <span class="text-bold-600 mt-1"> People Answered </span>
                           <ul class="list-unstyled users-list">
                               <li data-toggle="tooltip" data-popup="tooltip-custom" data-original-title="John Doe" class="avatar avatar-sm pull-up">
                                   <img class="media-object rounded-circle" src="app-assets/images/portrait/small/avatar-s-19.png" alt="Avatar">
