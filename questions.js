@@ -45,7 +45,7 @@ function createQuestionCard(question) {
                   <div class="heading-elements">
                       <ul class="list-inline mb-0 display-block">
                           <li>
-                              <a class="btn btn-md btn-danger box-shadow-2 round btn-min-width pull-right" href="#" target="_blank">In Progress</a>
+                              <a class="btn btn-md btn-info box-shadow-2 round btn-min-width pull-right" href="singleQuestion.html" target="_blank">Details</a>
                           </li>
                       </ul>
                   </div>
